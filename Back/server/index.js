@@ -13,7 +13,6 @@ require("./database/db");
 server.use(express());
 server.use(express.urlencoded({ extended: true, limit: "150mb" }));
 server.use(express.json({ limit: "50mb" }));
-
 server.use(cookieparser());
 server.use(morgan("dev"));
 server.use(cors());
